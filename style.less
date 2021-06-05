@@ -1,0 +1,71 @@
+@color-background: transparent;
+@box-color: rgba(15,43,21, 0.7);
+@color-text: rgba(235, 172, 147, 0.9);
+@shadow-text: 4px 4px 10px rgba(0,0,0,0.5);
+@shadow-text-darker: 4px 4px 10px rgba(0,0,0,0.9);
+@size-font: 18px;
+@btn-hover-color: rgb(235, 172, 142);
+@btn-color: rgba(182, 106, 86, 0.95); 
+@link-hover-color: rgba(212, 128, 89, 0.8);
+
+body {
+    background-image: url('landscape-975091_1920.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(255,255,255, 0.1);
+    background-blend-mode: overlay;
+    color: @color-text;
+    font-family: Cormorant SC;
+    text-shadow: @shadow-text;
+    font-size: @size-font;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: @link-hover-color;
+}
+.btn:hover {
+    background-color: @btn-hover-color;
+    color: black;
+}
+.cover-container {
+    max-width: 700px;
+    background-color: rgba(15,43,21, 0.5);
+}
+.nav {
+    background: @color-background;
+}
+.nav-link, h1 {
+    color: black;
+}
+p, li {
+    font-size: @size-font;
+}
+.rating {
+    position: absolute;
+    top: 25px; 
+    right: 25px;
+    color: white;
+    text-shadow: @shadow-text-darker;
+}
+.addFavorites {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+.watchTrailer {
+    position: absolute;
+    bottom: -10px;
+    right: 25px;
+    color: white;
+    text-shadow: @shadow-text-darker;
+}
+.btn-primary {
+    background-color: @btn-color;
+    border-color: rgba(182, 106, 86);
+}
+.col-md, .col-6, .col-md-5, .col-md-6 {
+    background-color: @box-color;
+}

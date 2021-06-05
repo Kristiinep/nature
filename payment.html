@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nature page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel = "stylesheet" type = "text/css" href = "./style.css" />    
+<link rel = "stylesheet/less" type = "text/css" href = "./style.less" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="text-center mt-5" onclick="location.href='./index.html'">
+        <h1 class="font-weight-bold mb-4">ALMOST IN THE NATURE</h1>
+        <img src="line.png" width="75%" class="mt-4">
+    </div>
+    <nav class="nav nav-masthead justify-content-center h4 mb-5 font-weight-bold mb-0 mt-3">
+        <a class="nav-link" href="./movies.html">MOVIES</a>
+        <a class="nav-link" href="./series.html">SERIES</a>
+        <a class="nav-link" href="./news.html">NEWS</a>
+        <a class="nav-link" href="./info_pricing.html">INFO &amp; PRICING</a>
+        <a class="nav-link" href="./login_makeuser.html"><img src="icons8-key-96.png" height="35" width="35"></a>
+    </nav>
+</header>
+<div class="container">
+    <div class="row mb-4">
+        <div class="col-md-5 mb-4 pb-4 mr-2 ml-2">
+            <div class="text-center">
+                <h4 class="mt-4">MAKE USER</h4>
+            </div>
+            <form class="mt-4">
+                    <div class="form-group">
+                        <label class="name">First name and last name</label>
+                        <input type="name" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label class="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label class="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="*********">
+                    </div>
+                    
+            </form>
+            <div class="text-center mt-4">
+                <p class="mb-2">Already have an account?</p>
+                <button type="logIn" class="btn btn-primary">Log In</button>
+            </div>
+        </div>
+        <div class="col-md mb-4 pb-4 mr-2 ml-2">
+            <div class="text-center">
+                <h4 class="mt-4">CHOOSE PACKAGE</h4>
+            </div>
+            <form>
+                <div class="btn-group btn-group-toggle mt-4" data-toggle="buttons">
+                    <div class="row row-cols-md-2 row-cols-1">
+                    <div class="col">
+                    <label class="btn btn-secondary">
+                        <h5 class="bg-dark mb-4">The unlimited nature</h5>
+                        <p>With this package you can enjoi following for a month:</p>
+                        <ul>
+                            <li>Unlimited movie watching</li>
+                            <li>Unlimited series watching</li>
+                            <li>Unlimited news reading</li>
+                        </ul>
+                        <h5>XX €</h5>
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                    </label>
+                    </div>
+                    <div class="col">
+                    <label class="btn btn-secondary">
+                        <h5 class="bg-dark mb-4">Coming back later</h5>
+                        <p>With this package you can enjoi your selected interest for 24h.</p>
+                        <h5>XX €</h5>
+                        <input type="radio" name="options" id="option2" autocomplete="off">
+                    </label></div></div>
+                </div>
+            </form>
+            <div class="text-center">
+                <button type="startWatching" class="btn btn-primary mt-4" onclick="location.href='./video.html'">START WATCHING</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
